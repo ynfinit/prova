@@ -1,0 +1,11 @@
+{
+  "type": "module",
+  "scripts": {
+    "start": ""
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "mongoose": "^8.7.1"
+  }
+}
