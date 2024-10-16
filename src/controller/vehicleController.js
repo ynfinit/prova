@@ -12,8 +12,8 @@ export const store = async (req, res) => {
 
 export const index = async (req, res) => {
     try {
-        const vehicle = await Vehicle.find().exec();
-        return res.status(200).json(vehicle);
+        const vehicles = await Vehicle.find().exec();
+        return res.status(200).json(vehicles);
     } catch (error) {
         return res.status(400).json({ message: error.message });
     }
