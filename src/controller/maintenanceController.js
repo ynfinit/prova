@@ -12,8 +12,8 @@ export const store = async (req, res) => {
 
 export const index = async (req, res) => {
     try {
-        const maintenance = await Maintenance.find().exec();
-        return res.status(200).json(maintenance);
+        const maintenances = await Maintenance.find().exec();
+        return res.status(200).json(maintenances);
     } catch (error) {
         return res.status(400).json({ message: error.message });
     }
